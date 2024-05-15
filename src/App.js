@@ -5,6 +5,7 @@ import Test from './ClassComponets/Test';
 import TestFun from './FunctionComponant/TestFun';
 import FunctionEvent from './FunctionComponant/FunctionEvent';
 import StateFun from './FunctionComponant/StateFun';
+import StateClass from './ClassComponets/StateClass';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
    <TestFun></TestFun>
    <FunctionEvent></FunctionEvent>
    <StateFun></StateFun>
+   <StateClass></StateClass>
     </div>
   );
 }
