@@ -12,7 +12,7 @@ function Demo() {
 
                 }
                 else {
-                    throw new Error('Error:' + response.status);
+                    throw Error('Error:' + response.status);
                 }
             })
             .then(data => {
