@@ -3,6 +3,7 @@ import './App.css';
 import Demo from './FunctionComponant/Demo';
 import Test from './ClassComponets/Test';
 import TestFun from './FunctionComponant/TestFun';
+import FunctionEvent from './FunctionComponant/FunctionEvent';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Demo></Demo>
    <Test></Test>
    <TestFun></TestFun>
+   <FunctionEvent></FunctionEvent>
     </div>
   );
 }

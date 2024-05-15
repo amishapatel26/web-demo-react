@@ -59,3 +59,18 @@ h1{
   color: pink;
   
 }
+button{
+  padding:12px;
+  background-color: greenyellow;
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid blue;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+button:hover{
+  font-size: 22px;
+}
+button:active{
+  color: red;
+}
