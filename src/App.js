@@ -6,8 +6,12 @@ import TestFun from './FunctionComponant/TestFun';
 import FunctionEvent from './FunctionComponant/FunctionEvent';
 import StateFun from './FunctionComponant/StateFun';
 import StateClass from './ClassComponets/StateClass';
+import PropsFun from './FunctionComponant/PropsFun';
+import { useState } from 'react';
 
 function App() {
+  
+  const[name,setName]=useState("amisha")
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -31,6 +35,10 @@ function App() {
    <FunctionEvent></FunctionEvent>
    <StateFun></StateFun>
    <StateClass></StateClass>
+   <PropsFun name={name} city="Surat" other={{moblie: 9512417932,Age:21}}></PropsFun>
+   
+   <button onClick={()=>setName('Mira')}>click</button>
+   
     </div>
   );
 }
