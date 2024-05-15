@@ -46,3 +46,16 @@ table{
 tr,td{
   border: 1px dotted blue;
 }
+
+
+body{
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+}
+
+h1{
+
+  color: pink;
+  
+}

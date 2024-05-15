@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Demo from './FunctionComponant/Demo';
 import Test from './ClassComponets/Test';
+import TestFun from './FunctionComponant/TestFun';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       
       <Demo></Demo>
    <Test></Test>
+   <TestFun></TestFun>
     </div>
   );
 }
