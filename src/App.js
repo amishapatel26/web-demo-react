@@ -9,6 +9,8 @@ import StateClass from './ClassComponets/StateClass';
 import PropsFun from './FunctionComponant/PropsFun';
 import { useState } from 'react';
 import InputBox from './FunctionComponant/InputBox';
+import ShowHide from './FunctionComponant/ShowHide';
+import HandelForm from './FunctionComponant/HandelForm';
 
 function App() {
   
@@ -40,7 +42,9 @@ function App() {
    
    <button onClick={()=>setName('Mira')}>click</button> */}
 
-   <InputBox></InputBox>
+   {/* <InputBox></InputBox> */}
+   {/* <ShowHide></ShowHide> */}
+   <HandelForm></HandelForm>
    
     </div>
   );
