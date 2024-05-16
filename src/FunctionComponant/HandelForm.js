@@ -12,8 +12,9 @@ function HandelForm(){
     function getFormdata(e){
         // e.preventDefalut();
         e.preventDefault();
-        setSubmitted(true);
-
+        if (fname !== "" && lname !== "" && city !== "" && tnc) {
+            setSubmitted(true);
+        }
 
     }
     return(
@@ -33,11 +34,11 @@ function HandelForm(){
                     <option>JunaGadh</option>
                 </select> <br></br><br></br>
                 <input type='checkbox' onChange={(e)=>setTnc(e.target.checked)}/>Accept Term & policy <br></br><br></br>
-                <button type='sumbit'>Submit</button>
+                <button type='sumbit' >Submit</button>
             </div>
         </form>
 
-        {submitted && (
+        {submitted  &&(
             <table>
                 <tbody>
                     <tr>
