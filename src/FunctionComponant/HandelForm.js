@@ -6,10 +6,14 @@ function HandelForm(){
     const[lname,setLname]=useState("");
     const[city,SetCity]=useState("");
     const[tnc,setTnc]=useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
 
     function getFormdata(e){
-        e.preventDefalut();
+        // e.preventDefalut();
+        e.preventDefault();
+        setSubmitted(true);
+
 
     }
     return(
@@ -33,26 +37,24 @@ function HandelForm(){
             </div>
         </form>
 
-        <table>
-            <tr>
-                <td>
-                    Frist name :
-                </td>
-                <td>setFname</td>
-            </tr>
-            <tr>
-                <td>
-                    Last name :
-                </td>
-                <td>setLname</td>
-            </tr>
-            <tr>
-                <td>
-                    City name :
-                </td>
-                <td>SetCity</td>
-            </tr>
-        </table>
+        {submitted && (
+            <table>
+                <tbody>
+                    <tr>
+                        <td>First name:</td>
+                        <td>{fname}</td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td>{lname}</td>
+                    </tr>
+                    <tr>
+                        <td>City name:</td>
+                        <td>{city}</td>
+                    </tr>
+                </tbody>
+            </table>
+        )}
         </>
     )
 }
